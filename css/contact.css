@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #0f0f13;
+color: white;
+line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+width: 100%;
+
+padding: 20px 8%;
+
+background: #15151c;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+border-bottom: 1px solid #292933;
+
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.logo span {
+color: #ff3b3b;
+}
+
+nav a {
+color: #ccc;
+
+text-decoration: none;
+
+margin-left: 25px;
+
+transition: 0.3s;
+
+}
+
+nav a:hover,
+nav a.active {
+color: #ff3b3b;
+}
+
+/* ================= HERO ================= */
+
+.contact-hero {
+
+text-align: center;
+
+max-width: 850px;
+
+margin: auto;
+
+padding: 80px 8% 60px;
+
+}
+
+.small-title {
+
+color: #ff3b3b;
+
+font-size: 14px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+}
+
+.contact-hero h1 {
+
+font-size: 52px;
+
+margin: 10px 0;
+
+}
+
+.contact-hero h1 span {
+
+color: #ff3b3b;
+
+}
+
+.contact-hero > p:last-child {
+
+color: #aaa;
+
+font-size: 17px;
+
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+
+max-width: 1150px;
+
+margin: auto;
+
+padding: 40px 8% 80px;
+
+display: grid;
+
+grid-template-columns:
+    1fr 1.2fr;
+
+gap: 40px;
+
+}
+
+/* ================= CONTACT INFO ================= */
+
+.contact-info {
+
+padding: 25px;
+
+}
+
+.contact-info h2 {
+
+font-size: 30px;
+
+margin-bottom: 15px;
+
+}
+
+.description {
+
+color: #999;
+
+margin-bottom: 35px;
+
+}
+
+/* ================= CONTACT ITEM ================= */
+
+.contact-item {
+
+display: flex;
+
+align-items: center;
+
+gap: 18px;
+
+margin-bottom: 25px;
+
+}
+
+.contact-icon {
+
+width: 55px;
+
+height: 55px;
+
+min-width: 55px;
+
+border-radius: 50%;
+
+background: #291a1d;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+.contact-icon i {
+
+color: #ff3b3b;
+
+font-size: 22px;
+
+}
+
+.contact-item h4 {
+
+color: white;
+
+margin-bottom: 3px;
+
+}
+
+.contact-item p {
+
+color: #999;
+
+font-size: 14px;
+
+}
+
+/* ================= SOCIAL ================= */
+
+.social-title {
+
+margin-top: 35px;
+
+margin-bottom: 15px;
+
+}
+
+.social-links {
+
+display: flex;
+
+gap: 15px;
+
+}
+
+.social-links a {
+
+width: 45px;
+
+height: 45px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 50%;
+
+background: #1a1a24;
+
+border: 1px solid #33333e;
+
+color: #ccc;
+
+font-size: 20px;
+
+text-decoration: none;
+
+transition: 0.3s;
+
+}
+
+.social-links a:hover {
+
+color: #ff3b3b;
+
+border-color: #ff3b3b;
+
+transform: translateY(-4px);
+
+}
+
+/* ================= FORM CARD ================= */
+
+.contact-form-card {
+
+background: #1a1a24;
+
+border: 1px solid #2a2a35;
+
+border-radius: 18px;
+
+padding: 30px;
+
+}
+
+.contact-form-card h2 {
+
+margin-bottom: 25px;
+
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+
+margin-bottom: 20px;
+
+}
+
+.form-group label {
+
+display: block;
+
+color: #ddd;
+
+margin-bottom: 7px;
+
+font-size: 14px;
+
+}
+
+.form-group input,
+.form-group textarea {
+
+width: 100%;
+
+padding: 13px 15px;
+
+background: #111118;
+
+border: 1px solid #33333e;
+
+border-radius: 8px;
+
+color: white;
+
+outline: none;
+
+font-size: 14px;
+
+transition: 0.3s;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+border-color: #ff3b3b;
+
+box-shadow:
+    0 0 0 2px rgba(255, 59, 59, 0.08);
+
+}
+
+.form-group textarea {
+
+resize: vertical;
+
+}
+
+/* ================= ERROR ================= */
+
+.form-group small {
+
+display: block;
+
+color: #ff5c5c;
+
+margin-top: 5px;
+
+font-size: 12px;
+
+}
+
+/* ================= BUTTON ================= */
+
+.contact-form-card button {
+
+width: 100%;
+
+padding: 13px;
+
+border: none;
+
+border-radius: 30px;
+
+background: #ff3b3b;
+
+color: white;
+
+font-size: 15px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+.contact-form-card button:hover {
+
+background: #e52f2f;
+
+transform: translateY(-2px);
+
+}
+
+.contact-form-card button i {
+
+margin-left: 7px;
+
+}
+
+/* ================= SUCCESS ================= */
+
+#successMessage {
+
+color: #5ee18a;
+
+text-align: center;
+
+margin-top: 15px;
+
+font-size: 14px;
+
+}
+
+/* ================= CTA ================= */
+
+.connect-section {
+
+text-align: center;
+
+padding: 70px 8%;
+
+background: #15151c;
+
+border-top: 1px solid #292933;
+
+border-bottom: 1px solid #292933;
+
+}
+
+.connect-section > i {
+
+color: #ff3b3b;
+
+font-size: 45px;
+
+}
+
+.connect-section h2 {
+
+font-size: 30px;
+
+margin: 10px 0;
+
+}
+
+.connect-section p {
+
+color: #999;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+text-align: center;
+
+padding: 30px;
+
+background: #15151c;
+
+color: #888;
+
+}
+
+footer span {
+
+color: #ff3b3b;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+header {
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+nav a {
+
+    margin: 5px 8px;
+
+    font-size: 14px;
+}
+
+.contact-hero h1 {
+
+    font-size: 42px;
+}
+
+.contact-section {
+
+    grid-template-columns: 1fr;
+
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+.contact-hero {
+
+    padding-top: 60px;
+}
+
+.contact-hero h1 {
+
+    font-size: 36px;
+}
+
+.contact-section {
+
+    padding-left: 6%;
+
+    padding-right: 6%;
+}
+
+.contact-form-card {
+
+    padding: 22px;
+}
+
+}

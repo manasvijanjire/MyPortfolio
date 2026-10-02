@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #0f0f13;
+color: white;
+line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+width: 100%;
+
+padding: 20px 8%;
+
+background: #15151c;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+border-bottom: 1px solid #292933;
+
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.logo span {
+color: #ff3b3b;
+}
+
+nav a {
+color: #ccc;
+
+text-decoration: none;
+
+margin-left: 25px;
+
+transition: 0.3s;
+
+}
+
+nav a:hover,
+nav a.active {
+color: #ff3b3b;
+}
+
+/* ================= HERO ================= */
+
+.project-hero {
+
+text-align: center;
+
+max-width: 850px;
+
+margin: auto;
+
+padding: 80px 8% 60px;
+
+}
+
+.small-title {
+
+color: #ff3b3b;
+
+font-size: 14px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+}
+
+.project-hero h1 {
+
+font-size: 52px;
+
+margin: 10px 0;
+
+}
+
+.project-hero h1 span {
+
+color: #ff3b3b;
+
+}
+
+.project-hero > p:last-child {
+
+color: #aaa;
+
+font-size: 17px;
+
+}
+
+/* ================= PROJECT SECTION ================= */
+
+.projects-section {
+
+padding: 40px 8% 80px;
+
+}
+
+.project-grid {
+
+display: grid;
+
+grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+gap: 30px;
+
+max-width: 1200px;
+
+margin: auto;
+
+}
+
+/* ================= PROJECT CARD ================= */
+
+.project-card {
+
+background: #1a1a24;
+
+border: 1px solid #2a2a35;
+
+border-radius: 18px;
+
+overflow: hidden;
+
+transition: 0.3s;
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+.project-card:hover {
+
+transform: translateY(-8px);
+
+border-color: #ff3b3b;
+
+box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.35);
+
+}
+
+/* ================= PROJECT IMAGE ================= */
+
+.project-image {
+
+height: 190px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-bottom: 1px solid #2a2a35;
+
+}
+
+.project-image i {
+
+font-size: 75px;
+
+}
+
+/* Blood Donation */
+
+.blood-image {
+
+background: linear-gradient(
+    135deg,
+    #321719,
+    #1a1a24
+);
+
+}
+
+.blood-image i {
+
+color: #ff3b3b;
+
+}
+
+/* CareerPath */
+
+.career-image {
+
+background: linear-gradient(
+    135deg,
+    #171d35,
+    #1a1a24
+);
+
+}
+
+.career-image i {
+
+color: #6c8cff;
+
+}
+
+/* Portfolio */
+
+.portfolio-image {
+
+background: linear-gradient(
+    135deg,
+    #292019,
+    #1a1a24
+);
+
+}
+
+.portfolio-image i {
+
+color: #ff9f43;
+
+}
+
+/* ================= PROJECT CONTENT ================= */
+
+.project-content {
+
+padding: 25px;
+
+flex: 1;
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+.project-number {
+
+color: #ff3b3b;
+
+font-size: 12px;
+
+font-weight: bold;
+
+letter-spacing: 1.5px;
+
+}
+
+.project-content h2 {
+
+font-size: 24px;
+
+margin: 8px 0 12px;
+
+}
+
+.project-content > p {
+
+color: #999;
+
+font-size: 15px;
+
+margin-bottom: 18px;
+
+}
+
+/* ================= FEATURES ================= */
+
+.project-content h4 {
+
+color: #ddd;
+
+margin-bottom: 8px;
+
+}
+
+.project-content ul {
+
+padding-left: 20px;
+
+margin-bottom: 20px;
+
+}
+
+.project-content li {
+
+color: #999;
+
+margin-bottom: 5px;
+
+font-size: 14px;
+
+}
+
+/* ================= TECHNOLOGIES ================= */
+
+.technologies {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 8px;
+
+margin-top: auto;
+
+margin-bottom: 20px;
+
+}
+
+.technologies span {
+
+background: #252530;
+
+color: #ddd;
+
+border: 1px solid #33333e;
+
+padding: 6px 10px;
+
+border-radius: 20px;
+
+font-size: 12px;
+
+}
+
+/* ================= BUTTONS ================= */
+
+.project-buttons {
+
+display: flex;
+
+gap: 10px;
+
+flex-wrap: wrap;
+
+}
+
+.btn {
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 7px;
+
+background: #ff3b3b;
+
+color: white;
+
+text-decoration: none;
+
+padding: 9px 15px;
+
+border-radius: 25px;
+
+font-size: 13px;
+
+transition: 0.3s;
+
+}
+
+.btn:hover {
+
+background: #e52f2f;
+
+transform: translateY(-2px);
+
+}
+
+.btn.github {
+
+background: transparent;
+
+border: 1px solid #444;
+
+color: #ccc;
+
+}
+
+.btn.github:hover {
+
+border-color: #ff3b3b;
+
+color: #ff3b3b;
+
+background: transparent;
+
+}
+
+/* ================= CTA ================= */
+
+.project-cta {
+
+text-align: center;
+
+padding: 70px 8%;
+
+background: #15151c;
+
+border-top: 1px solid #292933;
+
+border-bottom: 1px solid #292933;
+
+}
+
+.project-cta h2 {
+
+font-size: 30px;
+
+margin-bottom: 10px;
+
+}
+
+.project-cta p {
+
+color: #999;
+
+margin-bottom: 25px;
+
+}
+
+.cta-btn {
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 10px;
+
+background: #ff3b3b;
+
+color: white;
+
+text-decoration: none;
+
+padding: 12px 25px;
+
+border-radius: 30px;
+
+transition: 0.3s;
+
+}
+
+.cta-btn:hover {
+
+background: #e52f2f;
+
+transform: translateY(-3px);
+
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+text-align: center;
+
+padding: 30px;
+
+background: #15151c;
+
+color: #888;
+
+}
+
+footer span {
+
+color: #ff3b3b;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+header {
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+nav a {
+
+    margin: 5px 8px;
+
+    font-size: 14px;
+}
+
+.project-hero h1 {
+
+    font-size: 42px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+.project-hero {
+
+    padding-top: 60px;
+}
+
+.project-hero h1 {
+
+    font-size: 36px;
+}
+
+.projects-section {
+
+    padding-left: 6%;
+
+    padding-right: 6%;
+}
+
+.project-image {
+
+    height: 160px;
+}
+
+.project-image i {
+
+    font-size: 60px;
+}
+
+}

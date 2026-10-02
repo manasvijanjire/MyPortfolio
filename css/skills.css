@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: #0f0f13;
+color: white;
+line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+width: 100%;
+
+padding: 20px 8%;
+
+background: #15151c;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+border-bottom: 1px solid #292933;
+
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+.logo span {
+color: #ff3b3b;
+}
+
+nav a {
+color: #ccc;
+
+text-decoration: none;
+
+margin-left: 25px;
+
+transition: 0.3s;
+
+}
+
+nav a:hover,
+nav a.active {
+color: #ff3b3b;
+}
+
+/* ================= HERO ================= */
+
+.skills-hero {
+
+text-align: center;
+
+padding: 80px 8% 60px;
+
+max-width: 900px;
+
+margin: auto;
+
+}
+
+.small-title {
+
+color: #ff3b3b;
+
+font-size: 14px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+}
+
+.skills-hero h1 {
+
+font-size: 52px;
+
+margin: 10px 0;
+
+}
+
+.skills-hero h1 span {
+
+color: #ff3b3b;
+
+}
+
+.skills-hero > p:last-child {
+
+color: #aaa;
+
+font-size: 17px;
+
+}
+
+/* ================= SECTION ================= */
+
+.skills-section,
+.soft-section {
+
+padding: 60px 8%;
+
+}
+
+.section-title {
+
+font-size: 30px;
+
+margin-bottom: 35px;
+
+border-left: 4px solid #ff3b3b;
+
+padding-left: 15px;
+
+}
+
+.section-title i {
+
+color: #ff3b3b;
+
+margin-right: 8px;
+
+}
+
+/* ================= SKILLS GRID ================= */
+
+.skills-grid {
+
+display: grid;
+
+grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+gap: 25px;
+
+}
+
+/* ================= SKILL CARD ================= */
+
+.skill-card {
+
+background: #1a1a24;
+
+border: 1px solid #2a2a35;
+
+border-radius: 15px;
+
+padding: 28px;
+
+transition: 0.3s;
+
+}
+
+.skill-card:hover {
+
+transform: translateY(-7px);
+
+border-color: #ff3b3b;
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.skill-icon {
+
+width: 60px;
+
+height: 60px;
+
+border-radius: 50%;
+
+background: #291a1d;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin-bottom: 18px;
+
+}
+
+.skill-icon i {
+
+font-size: 28px;
+
+color: #ff3b3b;
+
+}
+
+.skill-card h3 {
+
+color: #ff3b3b;
+
+margin-bottom: 8px;
+
+}
+
+.skill-card > p {
+
+color: #999;
+
+margin-bottom: 25px;
+
+font-size: 14px;
+
+}
+
+/* ================= SKILL BAR ================= */
+
+.skill {
+
+margin-bottom: 18px;
+
+}
+
+.skill-name {
+
+display: flex;
+
+justify-content: space-between;
+
+margin-bottom: 7px;
+
+color: #ddd;
+
+font-size: 14px;
+
+}
+
+.skill-name span:last-child {
+
+color: #ff3b3b;
+
+font-weight: bold;
+
+}
+
+.skill-bar {
+
+width: 100%;
+
+height: 8px;
+
+background: #2a2a35;
+
+border-radius: 10px;
+
+overflow: hidden;
+
+}
+
+.skill-fill {
+
+height: 100%;
+
+background: #ff3b3b;
+
+border-radius: 10px;
+
+}
+
+/* ================= SKILL WIDTHS ================= */
+
+.html {
+width: 90%;
+}
+
+.css {
+width: 85%;
+}
+
+.javascript {
+width: 75%;
+}
+
+.bootstrap {
+width: 85%;
+}
+
+.python {
+width: 80%;
+}
+
+.django {
+width: 75%;
+}
+
+.sql {
+width: 75%;
+}
+
+.sqlite {
+width: 75%;
+}
+
+.mysql {
+width: 70%;
+}
+
+/* ================= TOOLS ================= */
+
+.tool-list {
+
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 12px;
+
+}
+
+.tool-list span {
+
+background: #252530;
+
+color: #ddd;
+
+padding: 10px 14px;
+
+border-radius: 25px;
+
+font-size: 14px;
+
+border: 1px solid #33333e;
+
+transition: 0.3s;
+
+}
+
+.tool-list span:hover {
+
+border-color: #ff3b3b;
+
+color: #ff3b3b;
+
+}
+
+.tool-list i {
+
+color: #ff3b3b;
+
+margin-right: 5px;
+
+}
+
+/* ================= SOFT SKILLS ================= */
+
+.soft-grid {
+
+display: grid;
+
+grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+gap: 20px;
+
+}
+
+.soft-card {
+
+background: #1a1a24;
+
+border: 1px solid #2a2a35;
+
+border-radius: 15px;
+
+padding: 25px;
+
+text-align: center;
+
+transition: 0.3s;
+
+}
+
+.soft-card:hover {
+
+transform: translateY(-6px);
+
+border-color: #ff3b3b;
+
+}
+
+.soft-card i {
+
+font-size: 32px;
+
+color: #ff3b3b;
+
+}
+
+.soft-card h3 {
+
+margin: 12px 0 8px;
+
+}
+
+.soft-card p {
+
+color: #999;
+
+font-size: 14px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+
+text-align: center;
+
+padding: 30px;
+
+background: #15151c;
+
+color: #888;
+
+margin-top: 40px;
+
+}
+
+footer span {
+
+color: #ff3b3b;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+header {
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+nav a {
+
+    margin: 5px 8px;
+
+    font-size: 14px;
+}
+
+.skills-hero h1 {
+
+    font-size: 42px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+.skills-hero {
+
+    padding-top: 60px;
+}
+
+.skills-hero h1 {
+
+    font-size: 36px;
+}
+
+.skills-section,
+.soft-section {
+
+    padding: 50px 6%;
+}
+
+}
